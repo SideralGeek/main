@@ -1,5 +1,6 @@
 #form-banner {
-    background: linear-gradient(239.19deg, #AA65EB 0%, #9142AA 100%);
+    background: linear-gradient(239.19deg, #7D42AA 0%, #AA65EB 100%);
+    border-radius: 50px;
     padding: 50px;
     color: white;
     box-shadow: 0 30px 30px -15px rgba(0, 0, 0, 0.3);
