@@ -1,0 +1,38 @@
+#frase-chamativa {
+
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.frase-convidativa {
+    margin-bottom: 20px;
+}
+
+.frase-convidativa2 {
+    margin-bottom: 20px;
+}
+
+#conteudo {
+    background-color: white;
+    
+}
+
+.card {
+    width: 18.8rem;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-img-top {
+    height: 180px;
+}
+
+#carouselExampleCaptions {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
