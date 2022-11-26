@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./imagens/logos/SVG/Preto/Logo Favicon - SVG.svg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Fonts e Icones -->
+    <script src="https://kit.fontawesome.com/02d5bd54a9.js" crossorigin="anonymous"></script>
+
+    <!-- Estilização/Script Geral -->
+    <link rel="stylesheet" href="./css/estilo-base.css">
+    <script src="./js/scritp-geral.js" defer></script>
+
+    <!-- Estilização/Script Banner -->
+    <link rel="stylesheet" href="./css/estilo-banner.css">
+    <script src="./js/scritp-banner.js" defer></script>
+
+    <title>Sideral Geek</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-3">
+                    <a href="./index.html">
+                        <img id="logo" src="./imagens/logos/PNG/Branco/Logo 1 - PNG.png" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Navbar -->
+                <div class="col-6">
+                    <div class="position-relative top-50 start-50 translate-middle">
+                        <div class="d-flex justify-content-center">
+                            <nav class="navbar">
+                                <!-- Home -->
+                                <a href="./index.html" class="link-branco">Home</a>&nbsp; | &nbsp;
+
+                                <!-- Pacotes -->
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="botao-dropdown-branco" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pacotes
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><button class="dropdown-item" type="button">Básico</button></li>
+                                        <li><button class="dropdown-item" type="button">Intermediário</button></li>
+                                        <li><button class="dropdown-item" type="button">Avançado</button></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Serviços -->
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="botao-dropdown-branco" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Serviços
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><button class="dropdown-item" type="button">Caixas Mistériosas</button></li>
+                                        <li><button class="dropdown-item" type="button"><a href="./banner-online.html" class="link-preto">Banner para Assinantes</a></button></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Contato -->
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="botao-dropdown-branco" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contato
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><button class="dropdown-item" type="button"><a href="#rodape" class="link-preto">Redes Sociais</a></button></li>
+                                        <li><button class="dropdown-item" type="button">Feedback</button></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Sobre Nós -->
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="botao-dropdown-branco" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sobre Nós
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><button class="dropdown-item" type="button">História</button></li>
+                                        <li><button class="dropdown-item" type="button">Objetivos</button></li>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Equipe</a>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Autenticação -->
+                <div class="col-3">
+                    <div class="position-relative top-50 start-50 translate-middle">
+                        <div class="d-flex justify-content-center">
+                            <div class="row">
+                                <div class="centralizado">
+                                    <div class="col">
+                                        <button class="botao-primario">Entrar</button>
+                                        <button class="botao-branco">Registrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <div id="conteudo">
+        <div class="container">
+
+            <!-- Texto -->
+            <div class="centralizado">
+                <p class="texto-1">
+                    Bem-vindo ao nosso Gerador de Banner para assinantes, preencha o formulário abaixo corretamente para gerar o seu Banner Online oficial da Sideral Geek!
+                </p>
+            </div>
+            
+            <hr class="divisao-espaco">
+        </div>
+        <!-- Formulário -->
+        <form action="https:// ou Site" method="post" id="form-banner">
+            <div class="container">
+                <div class="row">
+                    <!-- Identificação -->
+                    <div class="col">
+                        <h2 class="centralizado">Identificação</h2>
+                        <div class="divisao-espaco"></div>
+
+                        <!-- E-mail -->
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="form-email" placeholder="nome@exemplo.com" required>
+                            <small id="emailHelpInline" class="text-muted">
+                                <p class="texto-branco">Utilize o email vinculado a sua conta Geek</p>
+                            </small>
+                        </div>
+
+                        <!-- Usuário -->
+                        <div class="form-group">
+                            <div class="mt-4">
+                                <label for="form-usuario" class="form-label">Usuário</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" id="form-usuario" placeholder="Usuário" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Senha -->
+                        <div class="form-group">
+                            <div class="mt-4">
+                                <label for="form-senha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="form-senha" placeholder="Digite sua senha" minlength="6" required>
+                                <small id="passwordHelpInline" class="text-muted">
+                                    <p class="texto-branco">Deve ter pelo menos 6 caracteres.</p>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="divisao-espaco"></div>
+                        <h2 class="centralizado">Autenticação Externa</h2>
+                        <div class="divisao-espaco"></div>
+                        
+                        <!-- Autenticação Externa -->
+                        <div class="form-group">
+                            <div class="centralizado">
+                                <button class="botao-google">Entre com Google</button>
+                                <button class="botao-facebook">Entre com Facebook</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personalização -->
+                    <div class="col">
+                        <h2 class="centralizado">Personalização</h2>
+                        <div class="divisao-espaco"></div>
+
+                        <!-- Pacote -->
+                        <div class="form-group">
+                            <label for="form-pacote" class="form-label">Pacote</label>
+                            <select class="form-select" id="form-pacote" aria-label="Default select example" required>
+                                <option value="" selected>Selecione o seu pacote</option>
+                                <option value="1">Básico</option>
+                                <option value="2">Intermediário</option>
+                                <option value="3">Avançado</option>
+                            </select>
+                            <small id="selectHelpInline" class="text-muted">
+                                <p class="texto-branco">Escolha apenas um por vez.</p>
+                            </small>
+                        </div>
+                        
+                        <!-- Cor ou Imagem -->
+                        <div class="form-group">
+                            <div class="mt-5">
+                                <label for="form-cor" class="form-label">Cor</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="cor-selector1" type="radio" name="cor-selector" value="1" onclick="hideShowDiv(1)" checked>
+                                    <label class="form-check-label" for="cor-selector1">
+                                        Cor Sólida
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="cor-selector2" type="radio" name="cor-selector" value="2" onclick="hideShowDiv(2)">
+                                    <label class="form-check-label" for="cor-selector2">
+                                        Imagem
+                                    </label>
+                                </div>
+
+                                <!-- Cor Sólida -->
+                                <div class="mt-3">
+                                    <div id="formCorSelect">
+                                        <select class="form-select" aria-label="Default select example" required>
+                                            <option value="" selected>Selecione a cor de fundo</option>
+                                            <option value="1">Vermelho</option>
+                                            <option value="2">Laranja</option>
+                                            <option value="3">Amarelo</option>
+                                            <option value="4">Verde</option>
+                                            <option value="5">Azul</option>
+                                            <option value="6">Anil</option>
+                                            <option value="7">Violeta</option>
+                                            <option value="8">Branco</option>
+                                            <option value="9">Preto</option>
+                                            <option value="10">Cinza</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Imagem -->
+                                <div class="mt-3">
+                                    <div id="formCorUpload">
+                                        <input class="form-control" type="file" id="formFile" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="mt-5">
+                                <label for="form-descricao" class="form-label">Frase Personalizada (máx 150 caracteres)</label>
+                                <textarea class="form-control" id="form-descricao" rows="2" placeholder="Escreva uma frase pequena para ser implementada ao seu banner" maxlength="150" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enviar ou Cancelar -->
+                <div class="form-group">
+                    <div class="mt-5">
+                        <div class="direita">
+                            <input type="submit" class="btn btn-success"></input>
+                            <input type="reset" class="btn btn-danger"></input>
+                        </div>
+                    </div>
+
+                    <!-- FUTURO PROJETO
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Banner Gerado!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Seu Banner Personalizado foi gerado, uma cópia será enviada para o e-mail vinculado a sua conta. Caso prefira baixar agora clique em "Baixar", caso contrário, clique em "Ok".
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                                    <button type="button" class="btn btn-primary">Baixar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </form>
+
+            <hr class="divisao-espaco">
+
+            <!-- Voltar ao topo -->
+            <div class="centralizado">
+                <div class="voltar-topo">
+                    <a class="link-preto" href="#top">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer id="rodape" class="texto-branco">
+        <div class="container">
+            <div class="centralizado">
+                <div class="row">
+                    <div class="col">
+                        <h4>Redes Sociais</h4>
+                        <div class="esquerda">
+                            <a href="https://www.instagram.com/sideralgeek.oficial/" class="link-branco"><i class="fa fa-instagram"></i> Instagram</a> <br>
+                            <a href="" class="link-branco"><i class="fa fa-twitter-square"></i> Twitter</a> <br>
+                            <a href="" class="link-branco"><i class="fa fa-facebook-square"></i> Facebook</a> </br>
+                            <a href="" class="link-branco"><i class="fa fa-linkedin-square"></i> Linkedin</a>
+                            </div>
+                        <h4>Contato</h4>
+                        <div class="esquerda">
+                            <a href="https://contate.me/sideralgeek.oficial" class="link-branco"> <i class="fa fa-whatsapp"></i> WhatsApp</a> </br>
+                            <a href="mailto:sideralgeek.oficial@gmail.com" class="link-branco"> <i class="fa fa-envelope"></i> E-mail</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="position-relative top-50 start-50 translate-middle">
+                            <h4>Assine já!</h4>
+                            <button class="botao-primario">Assinar Um Plano</button>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="position-relative top-50 start-50 translate-middle">
+                            <a href="https://www.instagram.com/inf1.0/" target="_blank"><img id="logo-tinf" width="150px" src="./imagens/logos/TINF1.0 Logo.png" alt="Logo"></a>
+                            <h4 id="Desenvolvedora">Desenvolvedora</h4>
+                            <p>©2022 Technology Innovation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
