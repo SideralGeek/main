@@ -1,9 +1,9 @@
 <?php
 
 	include_once("ConnectionFactory_class.php");//PDO
-	include_once("Contato_class.php"); //entidade
+	include_once("Banner_class.php"); //entidade
 	
-	class ContatoDAO{
+	class BannerDAO{
 	//DAO - Data Access Object	
 	//CRUD - Creat, Read, Update e Delete
 	//operações básicas de banco de dados
@@ -16,17 +16,21 @@
 		}
 	
 		//cadastrar
-		public function cadastrar($cont){
+		public function cadastrar($bann){
 			try{
 				$stmt = $this->con->prepare(
-				"INSERT INTO contato(nome, email, telefone, foto)
-				VALUES (:nome, :email, :telefone, :foto)");
+				"INSERT INTO Banner(id, email, usuario, senha, pacote, cor_solida, cor_imagem, frase)
+				VALUES (:id, :email, :usuario, :senha, :pacote, :cor_solida, :cor_imagem, :frase)");
 				
 				//ligamos as âncoras aos valores de Contato
-				$stmt->bindValue(":nome", $cont->getNome());
-				$stmt->bindValue(":email", $cont->getEmail());
-				$stmt->bindValue(":telefone", $cont->getTelefone());
-				$stmt->bindValue(":foto", "teste");
+				$stmt->bindValue(":id", $bann->getId());
+				$stmt->bindValue(":email", $bann->getEmail());
+				$stmt->bindValue(":usuario", $bann->getUsuario());
+				$stmt->bindValue(":senha", $bann->getSenha());
+				$stmt->bindValue(":pacote", $bann->getPacote());
+				$stmt->bindValue(":cor_solida", $bann->getCor_solida());
+				$stmt->bindValue(":cor_imagem", "teste");
+				$stmt->bindValue(":frase", $bann->getFrase());
 				
 				$stmt->execute(); //execução do SQL	
 				
@@ -39,19 +43,19 @@
 		}
 		
 		//alterar
-		public function alterar($cont){
+		public function alterar($bann){
 			try{
 				$stmt = $this->con->prepare(
-				"UPDATE contato SET nome=:nome, 
+				"UPDATE banner SET nome=:nome, 
 				email = :email, telefone=:telefone, foto=:foto WHERE
 				id=:id");
 				
-				//ligamos as âncoras aos valores de Contato
-				$stmt->bindValue(":nome", $cont->getNome());
-				$stmt->bindValue(":email", $cont->getEmail());
-				$stmt->bindValue(":telefone", $cont->getTelefone());
-				$stmt->bindValue(":foto", $cont->getFoto());
-				$stmt->bindValue(":id", $cont->getId());
+				//ligamos as âncoras aos valores de Banner
+				$stmt->bindValue(":nome", $bann->getNome());
+				$stmt->bindValue(":email", $bann->getEmail());
+				$stmt->bindValue(":telefone", $bann->getTelefone());
+				$stmt->bindValue(":foto", $bann->getFoto());
+				$stmt->bindValue(":id", $bann->getId());
 				
 				$this->con->beginTransaction();
 				//Inicia a transação
@@ -70,7 +74,7 @@
 			}
 		}
 		//excluir
-		public function excluir($cont){
+		public function excluir($bann){
 			try{
 				$num = $this->con->exec("DELETE FROM contato WHERE id = " . $cont->getId());
 				//numero de linhas afetadas pelo comando
